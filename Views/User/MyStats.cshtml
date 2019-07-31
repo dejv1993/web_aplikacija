@@ -1,0 +1,51 @@
+﻿@model IEnumerable<BriscollaGame.Game>
+
+@{
+    ViewBag.Title = "MyStats";
+}
+
+<h2>MyStats</h2>
+<div class="jumbotron">
+    <h3>Wins:@ViewBag.won Lost:@ViewBag.lost Total Games Played:@ViewBag.total  Win-Ratio:@ViewBag.ratio%</h3>
+
+</div>
+<h2>Games Played</h2>
+<table class="table">
+
+    
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Id)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WinnerId)
+        </th>
+  
+        <th>
+            @Html.DisplayNameFor(model => model.Game_Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model=>model.Player_Game)
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Id)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WinnerId)
+        </td>
+      
+        <td>
+            @Html.DisplayFor(modelItem => item.Game_Type)
+        </td>
+      <td>
+          @Html.DisplayFor(modelItem=>item.Player_Game)
+      </td>
+        
+    </tr>
+}
+
+</table>
