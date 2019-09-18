@@ -1,0 +1,41 @@
+﻿@model BriscollaGame.Player
+
+
+
+<h2>Korisnik:@ViewBag.User</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Win_Rate)
+        </th>
+
+
+        <th></th>
+    </tr>
+    <tr>
+        <td>
+            @Html.DisplayFor(model => model.Username)
+        </td>
+
+        <td>
+            @Html.DisplayFor(model => model.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(model => model.Win_Rate)
+        </td>
+
+
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+            @Html.ActionLink("DeleteAccount", "Delete", new { id = Model.Id })
+        </td>
+    </tr>
+</table>

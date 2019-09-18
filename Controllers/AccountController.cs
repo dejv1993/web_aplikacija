@@ -23,6 +23,11 @@ namespace BriscollaGame.Controllers
         [AllowAnonymous]
         public ActionResult Login()
         {
+            if (HttpContext.User.Identity.IsAuthenticated)
+            {
+
+                return RedirectToAction("index", "Home");
+            }
             return View();
         }
         [HttpPost]

@@ -1,0 +1,46 @@
+﻿@model IEnumerable<BriscollaGame.Player>
+
+@{
+    ViewBag.Title = "TopPlayers";
+}
+
+<h2>TopPlayers</h2>
+
+
+<table class="table">
+    <tr>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Username)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.Win_Rate)
+        </th>
+
+        <th>
+            @Html.DisplayName("Games Played")
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+       int s=@item.Id;
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Username)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Win_Rate)
+            </td>
+            <td>
+
+               @Html.DisplayFor(modelItem => item.Games.Count)
+            </td>
+
+        
+        </tr>
+    }
+
+</table>
