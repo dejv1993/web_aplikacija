@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="BriscolaGame" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\icoric\\source\\repos\\BriscollaGame\\BriscollaGame\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\icoric\\source\\repos\\BriscollaGame\\BriscollaGame\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="PlayersEntities-Web.config Connection String" description="" value="metadata=res://*/BriscolaModel.csdl|res://*/BriscolaModel.ssdl|res://*/BriscolaModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=briscola.database.windows.net;initial catalog=Players;user id=dejv1993;password=Dejv_1993;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\icoric\\source\\repos\\BriscollaGame\\BriscollaGame\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PlayersEntities']/@connectionString" />
+  </parameter>
+</parameters>

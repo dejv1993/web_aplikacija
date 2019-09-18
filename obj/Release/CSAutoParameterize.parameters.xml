@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="PlayersEntities-Web.config Connection String" description="PlayersEntities Connection String used in web.config by the application to access the database." defaultValue="metadata=res://*/BriscolaModel.csdl|res://*/BriscolaModel.ssdl|res://*/BriscolaModel.msl;provider=System.Data.SqlClient;provider connection string=&quot;data source=briscola.database.windows.net;initial catalog=Players;user id=dejv1993;password=Dejv_1993;MultipleActiveResultSets=True;App=EntityFramework&quot;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\icoric\\source\\repos\\BriscollaGame\\BriscollaGame\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='PlayersEntities']/@connectionString" />
+  </parameter>
+</parameters>
